@@ -2,7 +2,7 @@
   "extends": ["next/core-web-vitals", "prettier"],
   "plugins": ["unused-imports", "import"],
   "rules": {
-    "unused-imports/no-unused-imports": "erro",
-    "import/order": ["erro", { "newlines-between": "always" }]
+    "unused-imports/no-unused-imports": 2, // Alterado de "erro" para 2
+    "import/order": [2, { "newlines-between": "always" }] // Alterado de "erro" para 2
   }
 }
