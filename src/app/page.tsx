@@ -5,6 +5,7 @@ import styles from "./page.module.scss";
 //Faz uma requisição assincrona
 async function getHeroesDate(): Promise<{ data: IHeroData[] }> {
   const res = await fetch(`${process.env.DOMAIN_ORIGIN}/api/heroes`);
+  console.log("Response from fetch:", res);
 
   //Caso não retorne a função
   if (!res.ok) {
