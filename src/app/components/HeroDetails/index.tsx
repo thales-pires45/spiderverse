@@ -1,8 +1,10 @@
+import { Quicksand } from "next/font/google";
+import Image from "next/image";
+
+import styles from "./heroDetails.module.scss";
+
 import { spidermanFont } from "@/app/fonts";
 import { IHeroData } from "@/app/interfaces/heroes";
-import { Quicksand } from "next/font/google";
-import styles from "./heroDetails.module.scss";
-import Image from "next/image";
 
 const quicksand = Quicksand({
   subsets: ["latin"],

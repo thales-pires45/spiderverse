@@ -1,11 +1,14 @@
 "use client";
 
-import { IHeroData } from "@/app/interfaces/heroes";
 import React, { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+
 import HeroDetails from "../HeroDetails";
-import styles from "./carousel.module.scss";
 import HeroPicture from "../HeroPicture";
+
+import styles from "./carousel.module.scss";
+
+import { IHeroData } from "@/app/interfaces/heroes";
 
 interface IProps {
   heroes: IHeroData[];
